@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task7</title>
    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     button{
         height: 2rem;
         width: 18rem;
+        border-top-left-radius: 10px;
     }
     table{
-        margin-top: 10%;
+        margin-top: 5%;
         margin-left: 25%;
+        color: aliceblue;
+        background-color: maroon ;
+       padding: 4rem;
+        border: 5rem solid rgb(165, 42, 83);
+       
     }
    </style>
 </head>
@@ -22,7 +31,7 @@
             <label for="name">Name:</label>
         </td>
         <td>
-            <input type="text" id="name">
+            <input type="text" id="name" placeholder="your name">
         </td>
     </tr>
     <tr>
@@ -30,7 +39,7 @@
             <label for="email">Email:</label>
         </td>
         <td>
-            <input type="email" id="email" >
+            <input type="email" id="email" placeholder="your email">
         </td>
     </tr>
     <tr>
@@ -54,7 +63,7 @@
             <label for="gender">Gender:</label>
         </td>
         <td>
-            <input type="radio" value="male" name="gender" id="gender">Male:
+            <input type="radio" value="male" name="gender" id="gender" >Male:
             <input type="radio" value="female" name="gender" id="gender">Female:
             <input type="radio" value="other" name="gender" id="gender">Other:
             
@@ -86,8 +95,8 @@
         <td>
             <label for="about">About:</label>
         </td>
-        <td>
-            <input style="height: 5rem;" type="text" id="About">
+        <td><textarea style="height: 5rem;" type="text" id="About" placeholder="write about yourself....." 
+        ></textarea>
         </td>
     </tr>
     <tr >
